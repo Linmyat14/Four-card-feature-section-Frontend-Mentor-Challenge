@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-grey: hsl(0, 0%, 98%);
+  --main-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+body {
+  background-color: var(--very-light-grey);
+  margin: 0 auto;
+}
+/* Header section */
+.header-section {
+  text-align: center;
+  margin-top: 30px;
+}
+.header-quote {
+  font-weight: 200;
+  font-size: 30px;
+  color: var(--very-dark-blue);
+}
+.header-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+.header-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+/* Cards Section */
+.card-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 40px;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.card {
+  padding: 15px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 350px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-7px);
+}
+.cyan {
+  border-top: 4px solid var(--primary-cyan);
+}
+.red {
+  border-top: 4px solid var(--primary-red);
+  margin-bottom: 20px;
+}
+.orange {
+  border-top: 4px solid var(--primary-orange);
+}
+.blue {
+  border-top: 4px solid var(--primary-blue);
+}
+
+.card-title {
+  margin-top: 10px;
+  color: var(--very-dark-blue);
+}
+.card-text {
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--grayish-blue);
+}
+.card-image {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  position: relative;
+  left: 75%;
+}
+
+/* Media queries */
+@media screen and (max-width: 375px) {
+  .header-section {
+    margin: 20px 5px;
+  }
+  .header-quote {
+    font-size: 25px;
+  }
+  .header-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+
+  }
+  .header-text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .card-section {
+    flex-direction: column;
+  }
+}
